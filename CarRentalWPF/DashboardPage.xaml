@@ -1,0 +1,64 @@
+<Page x:Class="CarRentalWPF.DashboardPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="DashboardPage">
+    <Grid Background="White" Margin="20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0" Margin="20,0,40,0">
+            <TextBlock Text="Dashboard" FontSize="24" FontWeight="Bold" Margin="0,0,0,20"/>
+            <TextBlock Text="Hi Admin, welcome back!" FontSize="16" Margin="0,0,0,30"/>
+
+            <UniformGrid Columns="3" Rows="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,0" Width="600" Height="250" >
+                <Border Background="#1E3A8A" CornerRadius="10" Margin="10" Padding="20">
+                    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <TextBlock Text="Customers" Foreground="White" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center"/>
+                        <TextBlock Text="9" Foreground="White" FontWeight="Bold" FontSize="36" HorizontalAlignment="Center" Margin="0,10,0,0"/>
+                    </StackPanel>
+                </Border>
+
+                <Border Background="#1E3A8A" CornerRadius="10" Margin="10" Padding="20">
+                    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <TextBlock Text="Users" Foreground="White" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center"/>
+                        <TextBlock Text="3" Foreground="White" FontWeight="Bold" FontSize="36" HorizontalAlignment="Center" Margin="0,10,0,0"/>
+                    </StackPanel>
+                </Border>
+
+                <Border Background="#1E3A8A" CornerRadius="10" Margin="10" Padding="20">
+                    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <TextBlock Text="Vehicles" Foreground="White" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center"/>
+                        <TextBlock Text="100" Foreground="White" FontWeight="Bold" FontSize="36" HorizontalAlignment="Center" Margin="0,10,0,0"/>
+                    </StackPanel>
+                </Border>
+
+                <Border Background="#1E3A8A" CornerRadius="10" Margin="10" Padding="20">
+                    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <TextBlock Text="Booking" Foreground="White" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center"/>
+                        <TextBlock Text="10" Foreground="White" FontWeight="Bold" FontSize="36" HorizontalAlignment="Center" Margin="0,10,0,0"/>
+                    </StackPanel>
+                </Border>
+
+                <Border Background="#1E3A8A" CornerRadius="10" Margin="10" Padding="20">
+                    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <TextBlock Text="Returns" Foreground="White" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center"/>
+                        <TextBlock Text="4" Foreground="White" FontWeight="Bold" FontSize="36" HorizontalAlignment="Center" Margin="0,10,0,0"/>
+                    </StackPanel>
+                </Border>
+
+                <Border Background="#1E3A8A" CornerRadius="10" Margin="10" Padding="20">
+                    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <TextBlock Text="Transactions" Foreground="White" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center"/>
+                        <TextBlock Text="100" Foreground="White" FontWeight="Bold" FontSize="36" HorizontalAlignment="Center" Margin="0,10,0,0"/>
+                    </StackPanel>
+                </Border>
+            </UniformGrid>
+        </StackPanel>
+
+        <Border Grid.Column="1" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Image Source="pack://application:,,,/CarRentalWPF;component/Assets/character.png" Width="250" Height="350" />
+        </Border>
+    </Grid>
+</Page>
